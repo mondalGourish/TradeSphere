@@ -31,3 +31,11 @@ code {
 .footer-link:hover {
   color: #387ed1;
 }
+
+.partner-logo {
+  height: 60px;
+  width: 160px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px auto;
+}
