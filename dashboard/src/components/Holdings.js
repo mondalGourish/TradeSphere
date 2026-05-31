@@ -20,7 +20,6 @@ const Holdings = () => {
               <th>Day chg.</th>
             </tr>
           </thead>
-          <tbody>
             {holdings.map((stock, index) => {
               const curValue = stock.price * stock.qty;
               const isProfit = curValue - stock.avg * stock.qty >= 0.0;
@@ -29,8 +28,6 @@ const Holdings = () => {
 
               return (
                 <tr key={index}>
-                  <td>{stock.product}</td>
-
                   <td>{stock.name}</td>
                   <td>{stock.qty}</td>
                   <td>{stock.avg.toFixed(2)}</td>
@@ -44,7 +41,7 @@ const Holdings = () => {
                 </tr>
               );
             })}
-          </tbody>
+          
         </table>
       </div>
 
